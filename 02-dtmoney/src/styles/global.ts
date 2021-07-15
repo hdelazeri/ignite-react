@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  body, button, textarea, button {
+  body, button, textarea, input {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
   }
@@ -75,5 +75,19 @@ export const GlobalStyle = createGlobalStyle`
     padding: 3rem;
     position: relative;
     border-radius: 0.25rem;
+  }
+
+  .react-modal-close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    border: 0;
+    background: transparent;
+
+    transition: 0.2s filter;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
 `
