@@ -8,7 +8,9 @@ const Dashboard: NextPage = () => {
   const { user } = useContext(AuthContext)
 
   useEffect(() => {
-    api.get('/me').then(console.log)
+    api.get('/me')
+      .then(console.log)
+      .catch(console.log)
   }, [])
 
   return (
